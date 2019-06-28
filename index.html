@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="night">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>m-keyboard example app</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 10px 10px 10px 10px;
+                height: 200vh;
+            }
+
+            .grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+            }
+        </style>
+        <script type="text/javascript" src="./node_modules/@meldcx/matrix-component-keyboard/dist/index.js"></script>
+        <script type="text/javascript" src="demo.js"></script>
+    </head>
+    <body>
+        <h1>Keyboard settings</h1>
+        <form class="grid settings">
+            <label>
+                <span class="label">Key Text Color</span>
+                <input name="c-text" />
+            </label>
+            <label>
+                <span class="label">Keyboard Height</span>
+                <input name="keyboard-height" />
+            </label>
+            <label>
+                <span class="label">Keyboard Background</span>
+                <input name="keyboard-bg" />
+            </label>
+            <label>
+                <span class="label">Key Margin</span>
+                <input name="keyboard-key-margin" />
+            </label>
+            <label>
+                <span class="label">Keyboard Iwdth</span>
+                <input name="keyboard-width" />
+            </label>
+            <label>
+                <span class="label">Key Font</span>
+                <input name="keyboard-key-font-family" />
+            </label>
+            <label>
+                <span class="label">Key Font Size</span>
+                <input name="keyboard-key-font-size" />
+            </label>
+            <label>
+                <span class="label">Key Font Color</span>
+                <input name="keyboard-key-color" />
+            </label>
+            <label>
+                <span class="label">Key Background Color</span>
+                <input name="keyboard-key-bg" />
+            </label>
+            <label>
+                <span class="label">Key Corner Radius</span>
+                <input name="keyboard-key-radius" />
+            </label>
+            <label>
+                <span class="label">Key Border</span>
+                <input name="keyboard-key-border" />
+            </label>
+            <label>
+                <span class="label">Icon Size</span>
+                <input name="keyboard-icon-size" />
+            </label>
+        </form>
+
+        <h1>Input tests</h1>
+        <form>
+            <input type="text" placeholder="Text">
+            <input type="number" placeholder="Number">
+            <textarea type="text" placeholder="Text area"></textarea>
+        </form>
+
+        <m-keyboard></m-keyboard>
+    </body>
+</html>
