@@ -173,10 +173,10 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@meldcx/matrix-component-keyboard@0.0.28":
-  version "0.0.28"
-  resolved "https://registry.yarnpkg.com/@meldcx/matrix-component-keyboard/-/matrix-component-keyboard-0.0.28.tgz#03858c7d9d1c5a8628cb81e59ac675808f77bb36"
-  integrity sha512-zhx0hG0jhgPI2RcD3ugaojo+vIBYwxbOyMjdzj17/mqtcxTCM4r06LX0bLfnJ8x4Ulja9nuR3P7xI8sogrBnoA==
+"@meldcx/matrix-component-keyboard@0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@meldcx/matrix-component-keyboard/-/matrix-component-keyboard-0.0.29.tgz#8bc0a38b5b9564d2dfd59124234fc93e9183fa8b"
+  integrity sha512-vV5eiPEBiIAVoBxll7h61KOGy5f0nqcLtMMSkHUqYDCLoQWA432+JNQ3UT3uPXzi1xud259cyGgT9zLqz3HqnA==
   dependencies:
     "@babel/core" "^7.4.5"
     "@babel/plugin-proposal-private-methods" "^7.4.4"
