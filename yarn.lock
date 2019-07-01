@@ -173,6 +173,11 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@meldcx/agent@^1.0.30":
+  version "1.0.30"
+  resolved "https://registry.yarnpkg.com/@meldcx/agent/-/agent-1.0.30.tgz#a0d18cdfb38e3988224b3b69553869c5fe552022"
+  integrity sha512-ETIXZIN/V2GiGwmKm2gB4aQtMNS6/C10AhxVZ+sMqyD68HVhDy25rsum8X9ZWaV6Vax6Puk+4Jp1AxFw9H26Ww==
+
 "@meldcx/matrix-component-keyboard@0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@meldcx/matrix-component-keyboard/-/matrix-component-keyboard-0.0.29.tgz#8bc0a38b5b9564d2dfd59124234fc93e9183fa8b"

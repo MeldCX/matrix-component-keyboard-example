@@ -10,7 +10,8 @@
             body {
                 font-family: Arial, Helvetica, sans-serif;
                 margin: 10px 10px 10px 10px;
-                height: 200vh;
+                height: 100vh;
+                overflow-y: hidden;
             }
 
             .grid {
@@ -18,8 +19,11 @@
                 grid-template-columns: repeat(4, 1fr);
             }
         </style>
+        <script src="agent.js"></script>
+        <script src="m-keyboard.js"></script>
         <script type="text/javascript" src="./node_modules/@meldcx/matrix-component-keyboard/dist/index.js"></script>
         <script type="text/javascript" src="demo.js"></script>
+
     </head>
     <body>
         <h1>Keyboard settings</h1>
@@ -41,7 +45,7 @@
                 <input name="keyboard-key-margin" />
             </label>
             <label>
-                <span class="label">Keyboard Iwdth</span>
+                <span class="label">Keyboard Width</span>
                 <input name="keyboard-width" />
             </label>
             <label>
