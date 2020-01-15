@@ -50,6 +50,19 @@ m-keyboard {
     --keyboard-icon-letters: /custom-icon.svg;
 }
 ```
+The keyboard that appears is based on the type of the input element.
+It is also possible to override this using html attributes on an input element.
+```html
+<!-- Number input that displays the qwerty  -->
+<input type="number" mkeyboard-layout="main" mkeyboard-keyset="qwerty" />
+
+<!-- Number input that displays the numpad  -->
+<input type="number" mkeyboard-layout="numpad" mkeyboard-keyset="numbersOnly" />
+
+<!-- Or display custom configurations (See below) -->
+<input type="number" mkeyboard-layout="my-layout" mkeyboard-keyset="my-keyset" />
+
+```
 To create a custom keyset, you must first register it on the keyboard.
 Let's create a keyset that adds a few buttons better suited for entering a URL like `'/'` and `'.com'`
 We'll use the QWERTY `layout`, and extend from the default `keyset`.
@@ -124,7 +137,6 @@ kb.addKeyset('sizes', [
 // Use the querty layout with our new 'sizes' key layout and set
 kb.update('sizes', 'sizes');
 ```
-
 
 If the layout contains multiple rows, take
 care to ensure that each row has the same sum of widths.

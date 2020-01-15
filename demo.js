@@ -2,7 +2,9 @@ window.onload = async() => {
     // Remove ChromeOS native Keyboard
     // We are using a local agent.js (however you can use @meldcx/agent)
     await window.Agent.onReadyAsync();
-    await window.Agent.Keyboard.disableKeyboard();
+    if (window.Agent.Keyboard) {
+        await window.Agent.Keyboard.disableKeyboard();
+    }
 
     // Implement Meld Keyboard
     const kb = document.querySelector('m-keyboard');

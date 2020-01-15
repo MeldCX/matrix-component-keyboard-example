@@ -19,11 +19,6 @@
                 grid-template-columns: repeat(4, 1fr);
             }
         </style>
-        <script src="agent.js"></script>
-        <script src="m-keyboard.js"></script>
-        <script type="text/javascript" src="./node_modules/@meldcx/matrix-component-keyboard/dist/index.js"></script>
-        <script type="text/javascript" src="demo.js"></script>
-
     </head>
     <body>
         <h1>Keyboard settings</h1>
@@ -80,11 +75,35 @@
 
         <h1>Input tests</h1>
         <form>
-            <input type="text" placeholder="Text">
-            <input type="number" placeholder="Number">
-            <textarea type="text" placeholder="Text area"></textarea>
+            <p>type="text" </p>
+            <input type="text" placeholder="Text"><br />
+            <p>type="number" </p>
+            <input type="number" placeholder="number"><br />
+        
+            <p>type="text" mkeyboard-layout="main" mkeyboard-keyset="qwerty"</p>
+            <input type="text" placeholder="main-qwerty" mkeyboard-layout="main" mkeyboard-keyset="qwerty"><br />
+        
+            <p>type="text" mkeyboard-layout="main" mkeyboard-keyset="numpad"</p>
+            <input type="text" placeholder="main-numpad" mkeyboard-layout="main" mkeyboard-keyset="numpad"><br />
+        
+            <p>type="number" mkeyboard-layout="main" mkeyboard-keyset="numpad"</p>
+            <input type="number" placeholder="main-numpad" mkeyboard-layout="main" mkeyboard-keyset="numpad"><br />
+        
+            <p>type="text" mkeyboard-layout="numpad" mkeyboard-keyset="numpad"</p>
+            <input type="text" placeholder="numpad-numpad" mkeyboard-layout="numpad" mkeyboard-keyset="numpad"><br />
+        
+            <p>type="text" mkeyboard-layout="numpad" mkeyboard-keyset="numbersOnly"</p>
+            <input type="text" placeholder="numpad-numbersOnly" mkeyboard-layout="numpad" mkeyboard-keyset="numbersOnly"><br />
+        
+            <br />
+            <textarea type="text" placeholder="Text area" value=""></textarea>
         </form>
 
         <m-keyboard></m-keyboard>
+
+        <script src="agent.js"></script>
+        <script src="m-keyboard.js"></script>
+        <script type="text/javascript" src="./node_modules/@meldcx/matrix-component-keyboard/dist/index.js"></script>
+        <script type="text/javascript" src="demo.js"></script>
     </body>
 </html>
