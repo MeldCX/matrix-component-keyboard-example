@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/MeldCX/matrix-component-keyboard-example#readme",
   "dependencies": {
-    "@meldcx/matrix-component-keyboard": "^0.0.34"
+    "@meldcx/matrix-component-keyboard": "^0.0.35"
   }
 }
